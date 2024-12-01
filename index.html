@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Form</title>
+  <link rel="stylesheet" href="style.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    crossorigin="anonymous"
+  />
+</head>
+<body>
+  <div class="container">
+    <form id="form">
+      <div class="title">Register</div>
+
+      <!-- Username Input -->
+      <div>
+        <label for="username">User Name</label>
+        <input type="text" id="username" placeholder="Enter your name" />
+        <div class="error"></div>
+      </div>
+
+      <!-- Email Input -->
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" />
+        <div class="error"></div>
+      </div>
+
+      <!-- Password Input -->
+      <div>
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Create a password" />
+        <div class="error"></div>
+      </div>
+
+      <!-- Confirm Password Input -->
+      <div>
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirm-password" placeholder="Repeat password" />
+        <div class="error"></div>
+      </div>
+
+      <!-- Send Mail -->
+      <button type="button" onclick="sendMail()">Send Email Confirmation</button>
+
+      <!-- Submit Button -->
+      <button id="btn" type="submit">Register</button>
+    </form>
+  </div>
+  <script src="main.js"></script>
+  <script src="mail.js"></script>
+</body>
+</html>
